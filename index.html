@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAKRA</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="icon" href="favicon.png">
+  <script src="https://kit.fontawesome.com/27361a43e9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <div class="text-bg-dark p-3">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <div class="mv-5 text-warning">
+      <img src="chakra.png" alt="">
+      CHAKRA
+      </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#our projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#forthcoming">Forthcoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contactus">ContactUs</a>
+          </li>
+        </ul>
+        <div class="col-md-7 text-end">
+          <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-dark text-center" id="loginModalLabel">Login to CHAKRA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-dark">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-dark">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-secondary text-light">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary text-dark">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SignUp Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-dark text-center" id="signupModalLabel">Create a Chakra account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label text-dark">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-dark">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-secondary" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-secondary text-light">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1st slide.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="2nd slide.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="3rd slide.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+   
+  <section id="our projects">
+    <div class="container my-5">
+      <h1 class="text-center">OUR PROJECTS</h1>
+    </div>
+    <div class="container my-5">
+    <div class="row featurette d-flex justify-content-center align-items-center my-4">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"> LEONARD <span class="text-muted">,MALAD WEST</span></h2>
+        <p class="lead">It’s time to reach the glorious end to your home-hunt and prepare for the start of a marvelous homely experience. Go on, step into LEONARD, a world of luxury with exceptional spaces & impeccable design. Bringing you an unmatched residential lifestyle, Chakra realtors presents a supreme residential property in Malad West.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid my-4" src="leonard.jpg"
+          alt="">
+
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">NINTENDO<span class="text-muted"> ,GOREGAON EAST</span></h2>
+        <p class="lead">Welcome to a place where you get everything the way you want.Nintendo is a well-appointed 1 & 2 bedroom boutique residences, located in Goregaon East. Situated next to the Lullu Mall and upcoming metro station, replete with modern amenities, convenient shopping & much more. Along with uninterrupted views of the magnificent city skyline, the Gorai Pagoda and the glorious sea line. An array of international partners ensures a lifestyle beyond expectations. With which you are bound to say, “Nothing like it”.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="nintendo.jpg"
+          alt="">
+
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">MARQUIS<span class="text-muted"> ,Worli</span></h2>
+        <p class="lead">Presenting fully-furnished 1 and 2 BHK designer residences by HBA,UK. Chakra Marquis offers you something that few others will - a designer label for your home, right in the heart of Mumbai. Step into an oasis of luxuries as global design leader, Hirsch Bedner Associates (HBA), UK, leave their famed and unmistakable mark of international design, living and comfort in your home. From thoughtful detailing to modular spaces to world-class amenities, MARQUIS is an address that says you have arrived.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="marquis.jpg"
+          alt="">
+
+      </div>
+    </div>
+
+  <section id="forthcoming">
+  </div>
+  <hr width="">
+  <div class="container my-5">
+    <h1 class="text-center">FORTHCOMING BUILDUPS</h1>
+    <div class="card-group my-5">
+      <div class=" card text-bg-secondary">
+        <img src="ananta.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ANANTA</h5>
+          <p class="card-text">"Posh"is a word and Chakra Ananta is that feeling Ananta brings you the elegant feeling that will thrive you off !!! <mark>Unlock it at 29cr</mark> </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card text-bg-secondary">
+        <img src="umang.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">UMANG</h5>
+          <p class="card-text">A satisfactory feeling is calling you at your upcoming homehold Chakra Umang.<mark>Book it now at 9cr</mark></p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card text-bg-secondary">
+        <img src="woodside.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WOODSIDE</h5>
+          <p class="card-text">A sensational 3-4 BHK appartment is arriving at Bandra in th form of Chakra Woodside.<mark> Price starts from 7cr</mark></p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+
+<section id="contactus">
+<hr my-5>
+</div>
+<div class="container my-5">
+  <h1 class="text-center">CONTACT US</h1>
+</div>
+  <div class="container my-4">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Enter email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Text your message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="button" class="btn btn-secondary text-center">Submit</button>
+</div>
+
+<div class="container my-5">
+  <hr class="muted">
+  <h2 class="text-center">OUR FOUNDERS</h2>
+</div>
+<div class="container my-auto">
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="alok.jpg" class="rounded-circle mx-auto d-block" alt="...">
+
+        <h2 class="fw-normal text-center">Mr Alok Dave</h2>
+        <p class="text-center">“Play by the rules, but be ferocious.”</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="ajay.jpg" class="rounded-circle mx-auto d-block" alt="...">
+        <h2 class="fw-normal text-center">Mr Praveen Patel</h2>
+        <p class="text-center">“Business opportunities are like buses, there’s always another one coming.”</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="praveen.jpg" class="rounded-circle mx-auto d-block" alt="...">
+
+        <h2 class="fw-normal text-center">Mr Ajay Prajapati</h2>
+        <p class="text-center">“Every problem is a gift-without problems we would not grow.”</p>
+        
+      
+    
+  </div>
+</div>
+<div class="text-bg-dark p-3">
+<footer class="py-3 my-4">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted ">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+  </ul>
+  <p class="text-center text-muted">© 2022 CHAKRA REALTORS ,MUMBAI</p>
+</footer>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+
+  <script>
+  var loader = document.getElementById("preloader");
+
+  window.addEventListener("load",function(){
+    loader.style.display = "none";
+  })
+  </script>
+
+</body>
+
+</html>
